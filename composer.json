@@ -1,0 +1,36 @@
+{
+	"name": "uweyv/league-example",
+	"description": "Uweyv Framework example with League Packages",
+	"type": "project",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Uweyv Project",
+			"email": "uweyv.project@gmail.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"App\\": "app/"
+		},
+		"files": [
+			"app/helpers.php"
+		]
+	},
+	"repositories": [
+		{
+			"type": "vcs",
+			"url": "https://github.com/uweyv/framework"
+		}
+	],
+	"require": {
+		"league/route": "^4.5",
+		"league/container": "^3.3",
+		"monolog/monolog": "^2.1",
+		"vlucas/phpdotenv": "^3.6",
+		"guzzlehttp/guzzle": "^6.5",
+		"league/plates": "v4.0.0-alpha",
+		"league/climate": "^3.5",
+		"uweyv/framework": "^0.1"
+	}
+}

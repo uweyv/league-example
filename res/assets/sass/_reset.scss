@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+	font-size: 1em;
+	line-height: 1em;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	a {
+		&:link, &:visited {
+			text-decoration: none;
+		}
+		&:hover, &:focus, &:active {
+			text-decoration: underline;
+		}
+	}
+	
+	button, input[type="button"], input[type="reset"], input[type="submit"] {
+		padding: 0.5rem;
+	}
+
+	main {
+		ul, ol {
+			padding-left: 1rem;
+		}
+	}
+}

@@ -1,0 +1,78 @@
+@use './reset';
+@use './vars' as *;
+
+html {
+	display: flex;
+	flex-flow: row nowrap;
+	font-family: monospace;
+	min-height: 100%;
+}
+body {
+	display: flex;
+	flex-flow: column nowrap;
+	flex-grow: 1;
+	font-family: sans-serif;
+
+	& > header {
+		background: $primary2;
+		color: #fff;
+		text-shadow: 1px 1px 0 #000;
+
+		& > h1 {
+			background: $primary1;
+			font-size: 2em;
+			padding: 1rem;
+		}
+
+		a {
+			&:link, &:visited {
+				color: #fff;
+			}
+		}
+		& > nav {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+
+			& > ul {
+				display: flex;
+				flex-flow: row wrap;
+				list-style-type: none;
+
+				& > li {
+					display: block;
+
+					& > a {
+						display: block;
+						padding: 0.5rem 1rem;
+					}
+				}
+			}
+		}
+	}
+	& > footer {
+		align-items: center;
+		background: #eee;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: space-between;
+		padding: 1rem 0;
+	}
+	& > main {
+		align-self: center;
+		flex-grow: 1;
+		max-width: 1200px;
+		width: 100%;
+
+		& > section {
+			&.text {
+				padding: 1rem 0;
+
+				h2 {
+					font-size: 1.75em;
+					margin-bottom: 0.5rem;
+				}
+			}
+		}
+	}
+}
